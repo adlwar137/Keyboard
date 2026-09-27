@@ -32,7 +32,7 @@ Custom firmware the will be written in rust
 
 ## Folders
 
-- 'firmware/' - Keyboard firmware
-- 'pcb/' - PCB design files
-- 'artifacts/' - STLs, DXFs, and other exported files
-- 'screenshots/' - Screenshots of various parts during development
+- `firmware/` - Keyboard firmware
+- `pcb/` - PCB design files
+- `artifacts/` - STLs, DXFs, and other exported files
+- `screenshots/` - Screenshots of various parts during development
