@@ -661,13 +661,21 @@
         "uuid": "1b664575-00b4-40b4-bde2-511c4bcaa699"
       }
     ],
-    "used_designators": "R1-2,PS1,#PWR1-8,J1-2,U1-2,C1-5,D1-21,SW1-21",
+    "used_designators": "SW1-84,D1-84,C1-5,U1-2,J1-2,#PWR1-8,PS1,R1-2",
     "variants": []
   },
   "sheets": [
     [
       "1b664575-00b4-40b4-bde2-511c4bcaa699",
       "Root"
+    ],
+    [
+      "5747f0dc-7a37-4369-a482-9271b681f570",
+      "SwitchClusterLeft"
+    ],
+    [
+      "0fd54e4d-95ef-4b85-87c5-de3357d3ba52",
+      "SwitchClusterRight"
     ]
   ],
   "text_variables": {},
