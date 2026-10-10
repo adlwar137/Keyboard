@@ -1,31 +1,29 @@
 #![no_std]
 #![no_main]
 
-use cortex_m_rt::entry;
-use panic_halt as _;
+// stm32f103c6
 
-use stm32f1xx_hal::{
-    pac,
-    prelude::*,
-};
+//First value of the Interrupt Vector Table is the Stack Pointer address
+//Second value of the Interrupt Vector Table is the Program Counter address
 
-#[entry]
-fn main() -> ! {
-    let dp = pac::Peripherals::take().unwrap();
+use core::panic::PanicInfo;
 
-    let mut rcc = dp.RCC.constrain();
 
-    let mut gpioc = dp.GPIOC.split(&mut rcc);
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn reset_handler() -> ! {
+    //inline asm to copy memory
 
-    let mut led = gpioc
-        .pc13
-        .into_push_pull_output(&mut gpioc.crh);
+    let _x = 42;
 
-    loop {
-        led.set_low();
-        cortex_m::asm::delay(8_000_000);
+    loop {}
+}
 
-        led.set_high();
-        cortex_m::asm::delay(8_000_000);
-    }
+#[unsafe(link_section = ".vector_table.reset_vector")]
+#[unsafe(no_mangle)]
+pub static RESET_VECTOR: unsafe extern "C" fn() -> ! = reset_handler;
+
+
+#[panic_handler]
+fn panic(info: &PanicInfo) -> ! {
+    loop {}
 }
