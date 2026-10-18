@@ -1203,235 +1203,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack4"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AudioJack4"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Audio Jack, 4 Poles (TRRS)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones TRRS connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Jack*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AudioJack4_0_1"
-				(rectangle
-					(start -6.35 -5.08)
-					(end -7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.715 -5.08) (xy -5.08 -5.715) (xy -4.445 -5.08) (xy -4.445 2.54) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -6.35 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy -2.54 0) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AudioJack4_1_1"
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "R1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "R2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -4054,15 +3825,25 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Flip these?\n"
+	(text "Future Audio Jack\n"
 		(exclude_from_sim no)
-		(at 244.856 120.396 0)
+		(at 273.05 134.366 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "6a605ef1-caee-4763-9ce7-f62e0c81981b")
+	)
+	(text "Future Audio Jack\n"
+		(exclude_from_sim no)
+		(at 130.81 170.688 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bc39ad45-ffd1-4fa2-b84c-d331df2c3555")
 	)
 	(junction
 		(at 73.66 29.21)
@@ -4197,6 +3978,12 @@
 		(uuid "498e817c-1ad4-443c-8499-1c92b4d69dda")
 	)
 	(junction
+		(at 254 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ad8ceeb-4211-4dfc-8d70-8be60c132465")
+	)
+	(junction
 		(at 22.86 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4293,10 +4080,10 @@
 		(uuid "7f5e899a-d78b-48d4-9b47-f2578dc04a06")
 	)
 	(junction
-		(at 254 133.35)
+		(at 251.46 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8277e939-2561-4a2a-bd64-f4ebd1215e18")
+		(uuid "82c7268e-5115-4130-bb0f-47f9dbbfda41")
 	)
 	(junction
 		(at 189.23 57.15)
@@ -4375,12 +4162,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf983143-aa45-4bda-8179-8bb996220b0a")
-	)
-	(junction
-		(at 251.46 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c73d3436-1723-491d-9a41-4e8810d3d7c3")
 	)
 	(junction
 		(at 214.63 57.15)
@@ -4490,16 +4271,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 135.89) (xy 251.46 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02a68006-5780-4126-85d0-a1e63e12d4ae")
-	)
-	(wire
-		(pts
 			(xy 68.58 99.06) (xy 86.36 99.06)
 		)
 		(stroke
@@ -4557,6 +4328,16 @@
 			(type default)
 		)
 		(uuid "0c736251-001a-43a1-8333-e09af33aa223")
+	)
+	(wire
+		(pts
+			(xy 254 101.6) (xy 254 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc342cb-b38a-4c76-8546-75402398bef7")
 	)
 	(wire
 		(pts
@@ -4930,6 +4711,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 104.14) (xy 251.46 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37bc67c6-8445-40fb-bcd6-0d692eeeb8eb")
+	)
+	(wire
+		(pts
 			(xy 179.07 114.3) (xy 180.34 114.3)
 		)
 		(stroke
@@ -5160,16 +4951,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 104.14) (xy 251.46 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ac062e0-17a6-4002-88cd-2476fa89ac47")
-	)
-	(wire
-		(pts
 			(xy 116.84 173.99) (xy 116.84 176.53)
 		)
 		(stroke
@@ -5380,6 +5161,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 135.89) (xy 254 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5de40107-a6d0-4df5-8172-7e5848439d5a")
+	)
+	(wire
+		(pts
 			(xy 20.32 60.96) (xy 27.94 60.96)
 		)
 		(stroke
@@ -5480,7 +5271,17 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 133.35) (xy 254 133.35)
+			(xy 254 135.89) (xy 262.89 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d292622-cd52-4dc9-ae8d-a21d1e5ad7d6")
+	)
+	(wire
+		(pts
+			(xy 247.65 133.35) (xy 251.46 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5660,16 +5461,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 101.6) (xy 254 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88d5dd31-ea90-4e08-ad07-f32d748ab794")
-	)
-	(wire
-		(pts
 			(xy 49.53 55.88) (xy 49.53 58.42)
 		)
 		(stroke
@@ -5747,16 +5538,6 @@
 			(type default)
 		)
 		(uuid "9638b447-d978-48d0-ab46-36005e6d40da")
-	)
-	(wire
-		(pts
-			(xy 251.46 135.89) (xy 262.89 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96546bab-446e-4a81-9f82-d6b1b6a8eca5")
 	)
 	(wire
 		(pts
@@ -5847,6 +5628,16 @@
 			(type default)
 		)
 		(uuid "a021b621-c5f5-44e3-8d8d-eb52e219e73a")
+	)
+	(wire
+		(pts
+			(xy 251.46 133.35) (xy 262.89 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a31cd2a1-fba3-4305-8946-ee30a90c0a5a")
 	)
 	(wire
 		(pts
@@ -6500,16 +6291,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 133.35) (xy 262.89 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2377acc-b5b7-4bc8-86d5-02de724d8988")
-	)
-	(wire
-		(pts
 			(xy 113.03 36.83) (xy 124.46 36.83)
 		)
 		(stroke
@@ -6588,7 +6369,7 @@
 		)
 		(uuid "fd8b01cf-0abd-4fa8-92ff-db40cdf81a73")
 	)
-	(label "BOOT1"
+	(label "BOOT1_M"
 		(at 52.07 144.78 0)
 		(effects
 			(font
@@ -6598,7 +6379,7 @@
 		)
 		(uuid "14424d3d-421b-4f4b-93b5-e5a6d7b02a0a")
 	)
-	(label "PC13"
+	(label "PC13_M"
 		(at 59.69 129.54 180)
 		(effects
 			(font
@@ -6608,7 +6389,17 @@
 		)
 		(uuid "17cc41c2-1dc0-41a7-a1e4-454cb92b6c81")
 	)
-	(label "NRST"
+	(label "RX_S"
+		(at 251.46 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1e26ad71-8806-4745-be35-b601c55a9fd5")
+	)
+	(label "NRST_S"
 		(at 200.66 78.74 0)
 		(effects
 			(font
@@ -6618,7 +6409,7 @@
 		)
 		(uuid "301fe540-648e-4dca-af0d-0ed16dc466e9")
 	)
-	(label "BOOT0R"
+	(label "BOOT0R_M"
 		(at 34.29 123.19 0)
 		(effects
 			(font
@@ -6628,7 +6419,7 @@
 		)
 		(uuid "4162d70c-1827-4939-9391-add367b002de")
 	)
-	(label "BOOT1R"
+	(label "BOOT1R_S"
 		(at 180.34 111.76 0)
 		(effects
 			(font
@@ -6638,7 +6429,7 @@
 		)
 		(uuid "54f869a9-c38e-495d-bf37-9a4417c0f4c3")
 	)
-	(label "BOOT0"
+	(label "BOOT0_M"
 		(at 52.07 116.84 0)
 		(effects
 			(font
@@ -6648,7 +6439,17 @@
 		)
 		(uuid "622e3ddd-464d-4f81-b730-8c1ca31ac0a1")
 	)
-	(label "TX"
+	(label "TX_S"
+		(at 254 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66875ac5-b6b8-4698-9491-fe1d567593ac")
+	)
+	(label "TX_M"
 		(at 110.49 153.67 0)
 		(effects
 			(font
@@ -6658,7 +6459,7 @@
 		)
 		(uuid "677ed1cb-2bee-45bf-95e6-d4a8959252ad")
 	)
-	(label "RX"
+	(label "RX_M"
 		(at 107.95 153.67 180)
 		(effects
 			(font
@@ -6668,7 +6469,7 @@
 		)
 		(uuid "8101a0ed-faea-4efa-a304-7a72a209d4fe")
 	)
-	(label "BOOT0"
+	(label "BOOT0_S"
 		(at 198.12 83.82 0)
 		(effects
 			(font
@@ -6678,7 +6479,7 @@
 		)
 		(uuid "88cc1dce-ce5a-411e-a338-65d29b1586aa")
 	)
-	(label "BOOT1"
+	(label "BOOT1_S"
 		(at 196.85 111.76 0)
 		(effects
 			(font
@@ -6688,7 +6489,7 @@
 		)
 		(uuid "8c6a0561-df45-4702-b2b0-250a9782a35c")
 	)
-	(label "PC13"
+	(label "PC13_S"
 		(at 205.74 96.52 180)
 		(effects
 			(font
@@ -6698,7 +6499,7 @@
 		)
 		(uuid "dddbd0e8-98b9-4149-8c86-5050e97b52c1")
 	)
-	(label "NRST"
+	(label "NRST_M"
 		(at 46.99 111.76 0)
 		(effects
 			(font
@@ -6708,7 +6509,7 @@
 		)
 		(uuid "e18b12dc-071a-464d-9115-5ec62eeb2f78")
 	)
-	(label "BOOT1R"
+	(label "BOOT1R_M"
 		(at 33.02 144.78 0)
 		(effects
 			(font
@@ -6718,7 +6519,7 @@
 		)
 		(uuid "f406318f-cbf0-459d-9efc-6c309cb2b5fe")
 	)
-	(label "BOOT0R"
+	(label "BOOT0R_S"
 		(at 181.61 90.17 0)
 		(effects
 			(font
@@ -11027,94 +10828,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack4")
-		(at 267.97 133.35 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8c72da20-d8c9-4bd8-8b0e-5464ea4550bd")
-		(property "Reference" "J7"
-			(at 276.86 133.9849 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "AudioJack4"
-			(at 276.86 136.5249 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "MyLibrary:Jack_3.5mm_CUI_SJ1-3524N_Horizontal"
-			(at 267.97 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 4 Poles (TRRS)"
-			(at 267.97 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "T"
-			(uuid "cda2d3db-4632-4dc9-9233-a344e233f542")
-		)
-		(pin "S"
-			(uuid "48bac98e-2664-4929-a5bc-fc325c6f4afe")
-		)
-		(pin "R2"
-			(uuid "590988b8-4988-4b9f-a20d-e8d182630c8f")
-		)
-		(pin "R1"
-			(uuid "724a9c44-7ed6-4c82-96f7-0d907c219b5c")
-		)
-		(instances
-			(project "Keyboard-PCB"
-				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 27.94 64.77 0)
 		(unit 1)
@@ -13429,95 +13142,6 @@
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack4")
-		(at 125.73 168.91 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f42c3db6-2a29-4029-80d7-9d07fd0ef8e2")
-		(property "Reference" "J2"
-			(at 134.62 169.5449 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "AudioJack4"
-			(at 134.62 172.0849 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "MyLibrary:Jack_3.5mm_CUI_SJ1-3524N_Horizontal"
-			(at 125.73 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 4 Poles (TRRS)"
-			(at 125.73 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "T"
-			(uuid "d37b9721-59f5-4bbc-b519-ceca0e094244")
-		)
-		(pin "S"
-			(uuid "3bbfaf2a-37ad-4e29-95a1-c8f76a28a032")
-		)
-		(pin "R2"
-			(uuid "c0aeab19-254e-4cb5-8945-5e0c5fed42fd")
-		)
-		(pin "R1"
-			(uuid "86474faa-019d-41ce-80ab-88af8def84d6")
-		)
-		(instances
-			(project "Keyboard-PCB"
-				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J2")
 					(unit 1)
 				)
 			)
