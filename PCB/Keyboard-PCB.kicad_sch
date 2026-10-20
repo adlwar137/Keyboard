@@ -8630,7 +8630,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 130.81 86.36 0)
+		(at 118.11 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8641,7 +8641,7 @@
 		(fields_autoplaced yes)
 		(uuid "1e006852-fea0-4f2c-bb36-28bc23780a0d")
 		(property "Reference" "H2"
-			(at 133.35 85.0899 0)
+			(at 120.65 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8652,7 +8652,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 133.35 87.6299 0)
+			(at 120.65 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8662,8 +8662,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 130.81 86.36 0)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8674,7 +8674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 86.36 0)
+			(at 118.11 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8685,7 +8685,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 130.81 86.36 0)
+			(at 118.11 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8879,7 +8879,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 130.81 81.28 0)
+		(at 118.11 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8890,7 +8890,7 @@
 		(fields_autoplaced yes)
 		(uuid "25918956-545e-4942-b692-f1489e1e556b")
 		(property "Reference" "H1"
-			(at 133.35 80.0099 0)
+			(at 120.65 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8901,7 +8901,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 133.35 82.5499 0)
+			(at 120.65 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8911,8 +8911,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 130.81 81.28 0)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8923,7 +8923,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 81.28 0)
+			(at 118.11 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8934,7 +8934,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 130.81 81.28 0)
+			(at 118.11 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9767,6 +9767,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 118.11 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b097e68-22f7-4fdc-8fcf-899d0a06484e")
+		(property "Reference" "H6"
+			(at 120.65 72.3899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 120.65 74.9299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 180.34 106.68 0)
 		(unit 1)
@@ -10401,6 +10477,82 @@
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 118.11 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "628b8b50-97ce-4ae2-9600-99a623190d65")
+		(property "Reference" "H5"
+			(at 120.65 67.3099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 120.65 69.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 118.11 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -12422,7 +12574,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 130.81 91.44 0)
+		(at 118.11 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12433,7 +12585,7 @@
 		(fields_autoplaced yes)
 		(uuid "b80f032e-7f61-4f96-b954-60b4229bb500")
 		(property "Reference" "H3"
-			(at 133.35 90.1699 0)
+			(at 120.65 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12444,7 +12596,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 133.35 92.7099 0)
+			(at 120.65 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12454,8 +12606,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 130.81 91.44 0)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12466,7 +12618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 91.44 0)
+			(at 118.11 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12477,7 +12629,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 130.81 91.44 0)
+			(at 118.11 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12903,7 +13055,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 130.81 96.52 0)
+		(at 118.11 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12914,7 +13066,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9679bff-1b04-4d6e-be51-cd5bfebbe3ef")
 		(property "Reference" "H4"
-			(at 133.35 95.2499 0)
+			(at 120.65 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12925,7 +13077,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 133.35 97.7899 0)
+			(at 120.65 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12935,8 +13087,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 130.81 96.52 0)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12947,7 +13099,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 96.52 0)
+			(at 118.11 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12958,7 +13110,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 130.81 96.52 0)
+			(at 118.11 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13127,6 +13279,82 @@
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 118.11 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3f50da1-a31e-4684-b3d6-f2ea0a9401d2")
+		(property "Reference" "H8"
+			(at 120.65 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 120.65 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 118.11 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -14086,6 +14314,82 @@
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 118.11 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fce960d9-4a73-4b6d-bba4-10d6eb4ed510")
+		(property "Reference" "H7"
+			(at 120.65 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 120.65 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 118.11 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 118.11 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H7")
 					(unit 1)
 				)
 			)
