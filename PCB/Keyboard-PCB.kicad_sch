@@ -1699,7 +1699,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MCU_ST_STM32F1:STM32F103C6Tx"
+		(symbol "MCU_ST_STM32F1:STM32F103C8Tx"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1716,7 +1716,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "STM32F103C6Tx"
+			(property "Value" "STM32F103C8Tx"
 				(at 7.62 39.37 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1739,7 +1739,7 @@
 					(justify right)
 				)
 			)
-			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c6.pdf"
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1750,7 +1750,7 @@
 					)
 				)
 			)
-			(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 32KB flash, 10KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
+			(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 64KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1783,7 +1783,7 @@
 					)
 				)
 			)
-			(symbol "STM32F103C6Tx_0_1"
+			(symbol "STM32F103C8Tx_0_1"
 				(rectangle
 					(start -15.24 -38.1)
 					(end 15.24 38.1)
@@ -1796,7 +1796,7 @@
 					)
 				)
 			)
-			(symbol "STM32F103C6Tx_1_1"
+			(symbol "STM32F103C8Tx_1_1"
 				(pin power_in line
 					(at -5.08 40.64 270)
 					(length 2.54)
@@ -2225,7 +2225,9 @@
 							)
 						)
 					)
+					(alternate "I2C2_SCL" bidirectional line)
 					(alternate "TIM2_CH3" bidirectional line)
+					(alternate "USART3_TX" bidirectional line)
 				)
 				(pin bidirectional line
 					(at -17.78 -22.86 0)
@@ -2246,7 +2248,9 @@
 					)
 					(alternate "ADC1_EXTI11" bidirectional line)
 					(alternate "ADC2_EXTI11" bidirectional line)
+					(alternate "I2C2_SDA" bidirectional line)
 					(alternate "TIM2_CH4" bidirectional line)
+					(alternate "USART3_RX" bidirectional line)
 				)
 				(pin power_in line
 					(at 0 -40.64 90)
@@ -2301,7 +2305,10 @@
 							)
 						)
 					)
+					(alternate "I2C2_SMBA" bidirectional line)
+					(alternate "SPI2_NSS" bidirectional line)
 					(alternate "TIM1_BKIN" bidirectional line)
+					(alternate "USART3_CK" bidirectional line)
 				)
 				(pin bidirectional line
 					(at -17.78 -27.94 0)
@@ -2320,7 +2327,9 @@
 							)
 						)
 					)
+					(alternate "SPI2_SCK" bidirectional line)
 					(alternate "TIM1_CH1N" bidirectional line)
+					(alternate "USART3_CTS" bidirectional line)
 				)
 				(pin bidirectional line
 					(at -17.78 -30.48 0)
@@ -2339,7 +2348,9 @@
 							)
 						)
 					)
+					(alternate "SPI2_MISO" bidirectional line)
 					(alternate "TIM1_CH2N" bidirectional line)
+					(alternate "USART3_RTS" bidirectional line)
 				)
 				(pin bidirectional line
 					(at -17.78 -33.02 0)
@@ -2360,6 +2371,7 @@
 					)
 					(alternate "ADC1_EXTI15" bidirectional line)
 					(alternate "ADC2_EXTI15" bidirectional line)
+					(alternate "SPI2_MOSI" bidirectional line)
 					(alternate "TIM1_CH3N" bidirectional line)
 				)
 				(pin bidirectional line
@@ -2649,6 +2661,7 @@
 						)
 					)
 					(alternate "I2C1_SCL" bidirectional line)
+					(alternate "TIM4_CH1" bidirectional line)
 					(alternate "USART1_TX" bidirectional line)
 				)
 				(pin bidirectional line
@@ -2669,6 +2682,7 @@
 						)
 					)
 					(alternate "I2C1_SDA" bidirectional line)
+					(alternate "TIM4_CH2" bidirectional line)
 					(alternate "USART1_RX" bidirectional line)
 				)
 				(pin input line
@@ -2708,6 +2722,7 @@
 					)
 					(alternate "CAN_RX" bidirectional line)
 					(alternate "I2C1_SCL" bidirectional line)
+					(alternate "TIM4_CH3" bidirectional line)
 				)
 				(pin bidirectional line
 					(at -17.78 -17.78 0)
@@ -2728,6 +2743,7 @@
 					)
 					(alternate "CAN_TX" bidirectional line)
 					(alternate "I2C1_SDA" bidirectional line)
+					(alternate "TIM4_CH4" bidirectional line)
 				)
 				(pin passive line
 					(at 0 -40.64 90)
@@ -2764,6 +2780,105 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -4242,12 +4357,220 @@
 		(uuid "f47fed0b-3843-42db-a8e1-786668d14623")
 	)
 	(no_connect
+		(at 59.69 147.32)
+		(uuid "059ca9c6-9da4-4635-861c-12334a6d9e87")
+	)
+	(no_connect
+		(at 241.3 96.52)
+		(uuid "0640b778-798b-433c-aa05-690a6809950c")
+	)
+	(no_connect
+		(at 205.74 106.68)
+		(uuid "083641c2-9e67-4d5f-9aa6-08a283adbd57")
+	)
+	(no_connect
+		(at 241.3 109.22)
+		(uuid "086f2d60-00ca-4c63-a0f2-36ca38c7129d")
+	)
+	(no_connect
+		(at 59.69 152.4)
+		(uuid "0a089db2-6b9a-4ab4-ada3-24abaadc8817")
+	)
+	(no_connect
+		(at 205.74 119.38)
+		(uuid "17c1658c-a77c-4d5e-abc2-be554f3f07bc")
+	)
+	(no_connect
+		(at 205.74 88.9)
+		(uuid "1d56ba67-28c9-4171-b0fa-95a5b14db943")
+	)
+	(no_connect
+		(at 205.74 99.06)
+		(uuid "1de1a7a4-c89f-4ba8-9b66-b7d9d3e42776")
+	)
+	(no_connect
+		(at 205.74 142.24)
+		(uuid "1ebaed5a-0f37-4b99-836f-90f0b1627148")
+	)
+	(no_connect
+		(at 59.69 177.8)
+		(uuid "2074d996-af2b-4e87-adfb-bb39c475f804")
+	)
+	(no_connect
+		(at 120.65 171.45)
+		(uuid "220533af-c674-44a4-a3eb-d6e5b0f07da5")
+	)
+	(no_connect
+		(at 120.65 166.37)
+		(uuid "25b6f7d1-5b88-40b0-ace6-728418eb1e74")
+	)
+	(no_connect
 		(at 43.18 50.8)
 		(uuid "2787247a-ddf3-43d8-88e0-b60817fe07c7")
 	)
 	(no_connect
+		(at 241.3 99.06)
+		(uuid "32ff4fae-3f7c-45f0-bf11-2b8cf706db2b")
+	)
+	(no_connect
 		(at 43.18 53.34)
 		(uuid "3ee9dae8-d6a0-4952-8733-23e7ef64d95d")
+	)
+	(no_connect
+		(at 241.3 106.68)
+		(uuid "3f2487d4-6bdd-4eb8-bfaa-b8a7e3b1be81")
+	)
+	(no_connect
+		(at 59.69 172.72)
+		(uuid "488917a7-b143-422e-a7c4-ed32821153a7")
+	)
+	(no_connect
+		(at 59.69 167.64)
+		(uuid "4a88f536-3798-4c0a-8995-c96d67fc40bc")
+	)
+	(no_connect
+		(at 59.69 121.92)
+		(uuid "548c53a2-e2a3-4883-830b-b9e0f0ef525f")
+	)
+	(no_connect
+		(at 205.74 127)
+		(uuid "5a88c21a-dc63-4a02-99c3-616db3f34283")
+	)
+	(no_connect
+		(at 59.69 139.7)
+		(uuid "5af9e509-ed95-4f56-8bc1-a85e6daa3f79")
+	)
+	(no_connect
+		(at 59.69 165.1)
+		(uuid "65d32019-8cb6-4052-8de4-aaeaf28e159d")
+	)
+	(no_connect
+		(at 59.69 160.02)
+		(uuid "669c70c0-14d0-4dc7-96d1-68488aa0b1eb")
+	)
+	(no_connect
+		(at 205.74 101.6)
+		(uuid "6dfcb720-56c8-4ca0-b2fc-3d0fb8fd94e1")
+	)
+	(no_connect
+		(at 205.74 91.44)
+		(uuid "709a6946-81e7-4237-9e1b-2c4719f8a85d")
+	)
+	(no_connect
+		(at 120.65 168.91)
+		(uuid "70f7767e-e05f-434e-b274-faeb542dd509")
+	)
+	(no_connect
+		(at 262.89 138.43)
+		(uuid "7d9085aa-6109-4833-9374-b7d40a35a311")
+	)
+	(no_connect
+		(at 59.69 149.86)
+		(uuid "81bdda94-fa1b-49f1-9dd4-e79aa9f96d15")
+	)
+	(no_connect
+		(at 59.69 157.48)
+		(uuid "855d78b9-5696-4ab6-9507-9b089f2906ed")
+	)
+	(no_connect
+		(at 120.65 173.99)
+		(uuid "95343a97-2748-4c32-8efd-91dae5d49a14")
+	)
+	(no_connect
+		(at 262.89 135.89)
+		(uuid "9777864c-1952-482a-896c-37f5b63b9816")
+	)
+	(no_connect
+		(at 95.25 129.54)
+		(uuid "98559a0f-118f-419c-a754-c6d9323a5e0f")
+	)
+	(no_connect
+		(at 59.69 132.08)
+		(uuid "9c411015-f087-4d77-a7d7-87cc4fa64337")
+	)
+	(no_connect
+		(at 205.74 132.08)
+		(uuid "a4dbb90c-f131-4b40-b25f-c1b831623c12")
+	)
+	(no_connect
+		(at 59.69 142.24)
+		(uuid "a605df03-74c9-472c-ba5b-79309b36ccbe")
+	)
+	(no_connect
+		(at 205.74 129.54)
+		(uuid "adbc9e2c-7925-4ea7-9ecf-cd7804a46bd4")
+	)
+	(no_connect
+		(at 59.69 170.18)
+		(uuid "b2a3e288-4006-4bbb-949e-b58b7161b376")
+	)
+	(no_connect
+		(at 95.25 132.08)
+		(uuid "b6f30102-a350-4b93-b6da-04c960020e3a")
+	)
+	(no_connect
+		(at 59.69 175.26)
+		(uuid "bec7c532-9847-41f0-aae3-55d92ea93547")
+	)
+	(no_connect
+		(at 205.74 114.3)
+		(uuid "c0c2fd99-bace-40f1-ba0d-8248f8e762dc")
+	)
+	(no_connect
+		(at 59.69 154.94)
+		(uuid "c2ec2db0-a1ea-477b-a339-4f63a3686b76")
+	)
+	(no_connect
+		(at 205.74 137.16)
+		(uuid "c6f8496c-b461-48e0-a973-a344f9c1b996")
+	)
+	(no_connect
+		(at 205.74 109.22)
+		(uuid "c95ab378-a719-452e-89a9-8bf30d2676c8")
+	)
+	(no_connect
+		(at 205.74 116.84)
+		(uuid "ca5f32f4-fd59-4617-bdf5-3ac10e8793a2")
+	)
+	(no_connect
+		(at 59.69 134.62)
+		(uuid "d0279bfd-0a47-4a6a-8e04-5f06de132f84")
+	)
+	(no_connect
+		(at 59.69 162.56)
+		(uuid "d2685827-50d8-4208-8c66-16480f94e24a")
+	)
+	(no_connect
+		(at 205.74 144.78)
+		(uuid "d61aaf87-0c1f-4bd7-8bc0-86ff3956c000")
+	)
+	(no_connect
+		(at 205.74 134.62)
+		(uuid "d725d15a-6b5b-4e91-bcfd-69c2bad1f112")
+	)
+	(no_connect
+		(at 262.89 130.81)
+		(uuid "e453d594-f866-4057-9e7e-e6f78c412c87")
+	)
+	(no_connect
+		(at 205.74 139.7)
+		(uuid "e63667f9-1547-48ac-9562-1b17f7d9fbdb")
+	)
+	(no_connect
+		(at 59.69 124.46)
+		(uuid "f1097fcb-b4ec-424c-b0a7-45e68aad2640")
+	)
+	(no_connect
+		(at 262.89 133.35)
+		(uuid "f7bea6cd-fc57-48d5-9500-a0a4b5f97044")
+	)
+	(no_connect
+		(at 205.74 124.46)
+		(uuid "faf94f43-4606-4676-bf28-a632417e49fe")
+	)
+	(no_connect
+		(at 205.74 121.92)
+		(uuid "ffe8d847-b3bf-4c92-8dfd-5373c4fa1d6c")
 	)
 	(wire
 		(pts
@@ -7030,7 +7353,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05f8849f-5003-49a5-b40c-892f5f7d6dc4")
-		(property "Reference" "R10"
+		(property "Reference" "R6"
 			(at 187.96 94.488 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7094,7 +7417,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "R10")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -7552,7 +7875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "130f26fa-cc37-484f-9956-83e7b42f1c3a")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 99.06 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7617,7 +7940,449 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_ST_STM32F1:STM32F103C8Tx")
+		(at 77.47 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1374a3eb-cee0-4910-be6e-48a0570ee389")
+		(property "Reference" "U2"
+			(at 82.1533 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32F103C8Tx"
+			(at 82.1533 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at 62.23 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+			(at 77.47 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 64KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
+			(at 77.47 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "17"
+			(uuid "7284b41e-cfb9-4486-8145-e3d5bc1e52f2")
+		)
+		(pin "32"
+			(uuid "e06e6153-b95b-4cdd-88a2-13268c281778")
+		)
+		(pin "27"
+			(uuid "394cd9fc-044e-4539-8ccf-43955baed220")
+		)
+		(pin "36"
+			(uuid "55c5dcdb-8320-4cba-982f-4bba317ea5eb")
+		)
+		(pin "26"
+			(uuid "98e7b2b1-4558-4eec-a4d4-289201d89e48")
+		)
+		(pin "33"
+			(uuid "3e111641-26fa-42b5-9396-d245ad4cfae5")
+		)
+		(pin "25"
+			(uuid "09f4b49e-b576-4ef7-9ef0-419e2acd0e5c")
+		)
+		(pin "28"
+			(uuid "d2f75e7b-7202-4e1f-8c7c-4fb0ad89f3e8")
+		)
+		(pin "35"
+			(uuid "38e1718c-e9e8-4eac-b1d9-133998a9934c")
+		)
+		(pin "29"
+			(uuid "5d868f81-138e-4d24-8c53-3e9dc653316e")
+		)
+		(pin "30"
+			(uuid "fcfaec45-6f23-4809-8bb9-76075818272f")
+		)
+		(pin "31"
+			(uuid "191b0a99-aa13-4401-a50f-2b8dadf032d5")
+		)
+		(pin "38"
+			(uuid "c425a04e-64a5-4f28-9835-c1ea302a5658")
+		)
+		(pin "24"
+			(uuid "b4e85d95-50b7-4af6-928a-f306b144548a")
+		)
+		(pin "23"
+			(uuid "59aba0b3-64e8-42d6-92c1-e41c770e7995")
+		)
+		(pin "22"
+			(uuid "73e38d14-9bb2-444c-a3ae-33e598123f19")
+		)
+		(pin "21"
+			(uuid "30d6b39e-ec3b-4e38-a176-f9f9dc25345a")
+		)
+		(pin "20"
+			(uuid "b6dffdb9-943a-42e7-b5ba-c9704e9d94d6")
+		)
+		(pin "19"
+			(uuid "06871a62-9b87-4245-a638-b0eadbbf3969")
+		)
+		(pin "18"
+			(uuid "d36ca4c0-ad2a-4e72-954d-98d648c0d825")
+		)
+		(pin "34"
+			(uuid "6248db99-fe48-448b-bb55-5fc71cd51774")
+		)
+		(pin "48"
+			(uuid "ec697676-a13a-4625-9bd2-346b6f068c84")
+		)
+		(pin "47"
+			(uuid "8289fc79-753d-4035-83d6-98ef149a11c7")
+		)
+		(pin "46"
+			(uuid "4a69ee9e-5208-4d97-931e-78983a58254f")
+		)
+		(pin "45"
+			(uuid "8db0344f-2f72-49eb-affb-e13b866a9d78")
+		)
+		(pin "44"
+			(uuid "3d495676-eacf-42c9-81d2-1a3a01863b94")
+		)
+		(pin "43"
+			(uuid "a707c1f0-04ca-492f-9918-b262805c5e61")
+		)
+		(pin "42"
+			(uuid "bdcb05bc-6b1f-4b52-b3dc-ad3f030beb35")
+		)
+		(pin "41"
+			(uuid "be787acd-e284-4d94-95b0-9bedb5b22b84")
+		)
+		(pin "40"
+			(uuid "5198ae12-01d3-4c24-9120-db27e0fda769")
+		)
+		(pin "39"
+			(uuid "936f5f5a-8860-4553-aa68-42b8a60c8f92")
+		)
+		(pin "10"
+			(uuid "b37299a7-c730-420f-9dd2-de45de19d73c")
+		)
+		(pin "9"
+			(uuid "fd2611dc-2498-4bc6-afa3-c4f9b673de80")
+		)
+		(pin "8"
+			(uuid "04f25b6f-b73e-43fe-a543-4afd65c46880")
+		)
+		(pin "7"
+			(uuid "19047da2-590f-48d9-ad7b-d345f4e653d5")
+		)
+		(pin "6"
+			(uuid "0fcf59cb-fe24-4bd5-92af-32c130f3aea5")
+		)
+		(pin "5"
+			(uuid "0f549886-3b06-4c4f-9067-7e22ca8f614b")
+		)
+		(pin "4"
+			(uuid "44e2518a-9fa0-4500-904a-b99e26a69f35")
+		)
+		(pin "3"
+			(uuid "cdac6981-827c-4a8d-8496-915e1fc239b1")
+		)
+		(pin "2"
+			(uuid "ec86d63b-f0ed-4001-a006-6151d4a68e8b")
+		)
+		(pin "1"
+			(uuid "85167326-d464-4b0a-8c78-046a628bc258")
+		)
+		(pin "14"
+			(uuid "65e3aeb2-7f2b-4a37-a266-293caef8306d")
+		)
+		(pin "13"
+			(uuid "b7c2284a-ffd4-4144-a8cb-a66c3633dec0")
+		)
+		(pin "12"
+			(uuid "60e3ea3c-e213-48e9-a04f-2535f8cdcab4")
+		)
+		(pin "11"
+			(uuid "2065ca31-7e4a-4ed8-b34a-0f3f9b91f8ab")
+		)
+		(pin "37"
+			(uuid "1ba0b806-79dd-4b94-91e8-d5850c47892d")
+		)
+		(pin "16"
+			(uuid "27477e62-ed29-41a7-b268-06004fb22cdf")
+		)
+		(pin "15"
+			(uuid "e0076e2c-11c7-4f42-8541-8f40d170cf6f")
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_ST_STM32F1:STM32F103C8Tx")
+		(at 223.52 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1513cba6-a1b1-4b78-a597-3b0efb1df4cc")
+		(property "Reference" "U3"
+			(at 228.2033 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32F103C8Tx"
+			(at 228.2033 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at 208.28 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+			(at 223.52 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 64KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
+			(at 223.52 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "17"
+			(uuid "f0e28ac9-6ca4-4a03-9bfd-d690be8ea01d")
+		)
+		(pin "32"
+			(uuid "4d58bd12-6098-417b-8b43-8382403f4064")
+		)
+		(pin "27"
+			(uuid "167917dd-28f0-4b87-9bfa-bfff3180e018")
+		)
+		(pin "36"
+			(uuid "144b5560-31e3-4051-817c-95594d46122e")
+		)
+		(pin "26"
+			(uuid "4cbe30c0-7bd0-4b7d-a4e6-f270dd5764e2")
+		)
+		(pin "33"
+			(uuid "91067dea-2441-4bbf-85e6-56f92f3c1bca")
+		)
+		(pin "25"
+			(uuid "87eb089b-6989-4381-b8bb-1b42e91b5bf2")
+		)
+		(pin "28"
+			(uuid "1d65eeed-2d41-4081-a8fc-eaeaed302d42")
+		)
+		(pin "35"
+			(uuid "06324b31-9083-43fe-9895-1085234ef3bc")
+		)
+		(pin "29"
+			(uuid "f8e1acc3-66de-49c3-9b47-92836f13865d")
+		)
+		(pin "30"
+			(uuid "cec2e081-9f49-42d2-970f-16cd183c4a8d")
+		)
+		(pin "31"
+			(uuid "0c11eabb-b2cc-496a-a9b0-db5e69daedca")
+		)
+		(pin "38"
+			(uuid "4d6e8d03-f8ac-458f-9647-ba8fa679c0ac")
+		)
+		(pin "24"
+			(uuid "1ff3cdf9-ec54-47fc-934f-58ffc7bebb0a")
+		)
+		(pin "23"
+			(uuid "e1b7fcbb-34fd-430c-9e0d-e1ee1ea977ad")
+		)
+		(pin "22"
+			(uuid "178ca98c-7149-4fa2-b84e-2a26a17fac06")
+		)
+		(pin "21"
+			(uuid "807b4820-90af-4b8a-b1f0-98bf9dc5ce57")
+		)
+		(pin "20"
+			(uuid "4bddf4fe-7df9-4ca2-99cc-74afe0a71799")
+		)
+		(pin "19"
+			(uuid "373678c1-d7f0-4d9d-ac1e-076574ee328b")
+		)
+		(pin "18"
+			(uuid "4dd805bb-6813-49af-8f3e-5866235c7b70")
+		)
+		(pin "34"
+			(uuid "4c239819-0e0d-4943-9103-54b79a7a3da4")
+		)
+		(pin "48"
+			(uuid "8406b703-2ae0-40e5-9e59-832a17a4057d")
+		)
+		(pin "47"
+			(uuid "ef15060b-7f50-4453-8123-c04184333874")
+		)
+		(pin "46"
+			(uuid "fde52907-5c11-41d6-92f8-3415df8bc8d6")
+		)
+		(pin "45"
+			(uuid "8527baf4-1b4d-4096-8e5a-6d36abbbdb43")
+		)
+		(pin "44"
+			(uuid "60e062f5-21e4-42c9-9c3d-1ff37edb0822")
+		)
+		(pin "43"
+			(uuid "392ba333-3315-4ffa-8bf4-9352e1569786")
+		)
+		(pin "42"
+			(uuid "5daf819e-b612-4aeb-833d-af3b52c739e6")
+		)
+		(pin "41"
+			(uuid "d0438ad3-9ae4-4b15-aa40-cba80e443aa8")
+		)
+		(pin "40"
+			(uuid "df391991-6ad7-47c7-ae3d-335f46e8a6b0")
+		)
+		(pin "39"
+			(uuid "cf44e553-0a8e-4d74-a0f5-6196526ddd3f")
+		)
+		(pin "10"
+			(uuid "bc475ad9-f27b-4a73-b280-f130e9cd423e")
+		)
+		(pin "9"
+			(uuid "6b7a5868-2a6e-46b3-811b-c9650e03d07f")
+		)
+		(pin "8"
+			(uuid "cc1f4da6-0d5e-46e0-96c2-fa03dc53a8f4")
+		)
+		(pin "7"
+			(uuid "e62e2e5e-5d85-4eac-be56-3640908014d8")
+		)
+		(pin "6"
+			(uuid "176df67a-9ac5-42f5-99cc-2fe8e8660b92")
+		)
+		(pin "5"
+			(uuid "ac02d07e-0213-4aa9-8c38-24d1780e7f6c")
+		)
+		(pin "4"
+			(uuid "8c2a67d3-53bf-443a-998d-3417a5752e60")
+		)
+		(pin "3"
+			(uuid "67b47a9c-46ef-4e65-addb-572aa9b6a446")
+		)
+		(pin "2"
+			(uuid "176bd8c2-0017-48ed-9cc7-6bcddd57404c")
+		)
+		(pin "1"
+			(uuid "500c3c23-8c61-4273-a4c0-3eaa4c2a2b07")
+		)
+		(pin "14"
+			(uuid "a96a620b-32a3-4477-a2ff-c88e880fb505")
+		)
+		(pin "13"
+			(uuid "1a1df244-b39a-4cc9-a166-714c707b8ffe")
+		)
+		(pin "12"
+			(uuid "8d5392df-ab8f-46cf-8812-19427cc33f8a")
+		)
+		(pin "11"
+			(uuid "7c9eb560-e885-4099-8da6-fa8e92d093f3")
+		)
+		(pin "37"
+			(uuid "6021fd2f-6e81-4d1e-9eb9-525ec144a8d3")
+		)
+		(pin "16"
+			(uuid "4a917f54-6b86-4822-868a-b53352894974")
+		)
+		(pin "15"
+			(uuid "32ecdd35-082b-4869-a658-0317407967bc")
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -7864,6 +8629,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 130.81 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e006852-fea0-4f2c-bb36-28bc23780a0d")
+		(property "Reference" "H2"
+			(at 133.35 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 133.35 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 53.34 129.54 0)
 		(unit 1)
@@ -7966,7 +8807,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "238d5b61-75fc-45f3-b2ff-3610d29ca45a")
-		(property "Reference" "C2"
+		(property "Reference" "C6"
 			(at 46.482 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8030,7 +8871,83 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "C2")
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 130.81 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25918956-545e-4942-b692-f1489e1e556b")
+		(property "Reference" "H1"
+			(at 133.35 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 133.35 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 130.81 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -8708,7 +9625,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 25.908 115.062 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9831,7 +10748,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "733609a7-2eca-4775-a8ee-73c3dcdef66b")
-		(property "Reference" "R5"
+		(property "Reference" "R9"
 			(at 48.26 119.126 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9893,7 +10810,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "R5")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -10057,227 +10974,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_ST_STM32F1:STM32F103C6Tx")
-		(at 77.47 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79bb61ef-44f1-4f0e-be17-352439d444ed")
-		(property "Reference" "U1"
-			(at 82.1533 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32F103C6Tx"
-			(at 82.1533 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at 62.23 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c6.pdf"
-			(at 77.47 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 32KB flash, 10KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
-			(at 77.47 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "37"
-			(uuid "376e9230-5338-49a5-8106-8cebff2c5e67")
-		)
-		(pin "36"
-			(uuid "a664dad4-4637-4719-8423-b9698d79513e")
-		)
-		(pin "45"
-			(uuid "badbcd61-62bd-48f6-900a-a76cdcc4c934")
-		)
-		(pin "47"
-			(uuid "2033bb3d-f9b8-406b-853f-00c28afaec49")
-		)
-		(pin "38"
-			(uuid "00e7252a-5e92-4a77-abfb-ca6fb4ebc14c")
-		)
-		(pin "44"
-			(uuid "7aaa9671-ea6d-4a08-8e1e-f6f25dca4cfd")
-		)
-		(pin "3"
-			(uuid "aaf126a1-dcdf-433f-819c-4b624b6dd637")
-		)
-		(pin "32"
-			(uuid "627e3f92-53f6-4d10-9aad-065b7174d69d")
-		)
-		(pin "4"
-			(uuid "bb5849d6-2287-4ab9-899e-da5f6d2748bd")
-		)
-		(pin "5"
-			(uuid "7ef0f028-d07b-4e2e-bffb-d78aabc2fa56")
-		)
-		(pin "31"
-			(uuid "9b32b0d4-a496-4558-928e-328051a1f3da")
-		)
-		(pin "30"
-			(uuid "2f891a00-5880-4669-8a12-fd3e55238f82")
-		)
-		(pin "29"
-			(uuid "07cbe88d-f2cc-427e-83f9-6f37cd89466d")
-		)
-		(pin "28"
-			(uuid "3673a3bf-5b19-4514-b5af-49b9b05ad8df")
-		)
-		(pin "27"
-			(uuid "39126ba9-2c06-46e1-bd01-1cbc45dc77d5")
-		)
-		(pin "26"
-			(uuid "6048419a-cc89-4d76-b6bd-67a92ef0ef89")
-		)
-		(pin "25"
-			(uuid "29cb2df9-13f5-447a-b31b-47d45514ddae")
-		)
-		(pin "24"
-			(uuid "8827081f-f345-4216-85dc-a8df04311f2c")
-		)
-		(pin "23"
-			(uuid "f9d0fc49-1179-47a3-bca9-6281f51a36c9")
-		)
-		(pin "22"
-			(uuid "43bf7525-190c-4334-a2ca-59411d59527e")
-		)
-		(pin "33"
-			(uuid "67a4f535-1577-40cb-8f85-e4111f587989")
-		)
-		(pin "17"
-			(uuid "60b3e73e-1566-445c-b320-20edb02094c7")
-		)
-		(pin "21"
-			(uuid "773f92fb-6fb0-4268-9b15-84bda44d2abc")
-		)
-		(pin "20"
-			(uuid "0dc48528-6344-47e3-bbba-b89e24278e8d")
-		)
-		(pin "19"
-			(uuid "e00dadfb-4321-4ebe-9bcc-c6bde13231e9")
-		)
-		(pin "18"
-			(uuid "5859fdbd-8ef6-48fe-837f-307df3943c78")
-		)
-		(pin "34"
-			(uuid "2f8bd4b9-5c5f-41e6-9664-2044718cf860")
-		)
-		(pin "35"
-			(uuid "8b5dbfee-7df9-468a-b19b-aaa3e1ea856d")
-		)
-		(pin "40"
-			(uuid "61a2b38f-2a1b-460f-b386-e66d7c8d5908")
-		)
-		(pin "11"
-			(uuid "0ed4fa62-a5d3-4d0b-8faa-359420320286")
-		)
-		(pin "12"
-			(uuid "f7fb6dc0-e970-481c-8820-bcb6dc36e064")
-		)
-		(pin "13"
-			(uuid "e3da51a8-df44-4446-8890-aa45f530986d")
-		)
-		(pin "14"
-			(uuid "c980ec48-b802-4ad6-8a4e-fce661889099")
-		)
-		(pin "15"
-			(uuid "5e5e60cb-1463-40c2-81dc-be97d53fd3d8")
-		)
-		(pin "16"
-			(uuid "0365e582-5431-45e7-a392-cdad23a16cb7")
-		)
-		(pin "6"
-			(uuid "3f287349-baba-44c7-a026-ec49f600c841")
-		)
-		(pin "7"
-			(uuid "1ade021e-2bd4-4a5e-8884-de3f0a86dab8")
-		)
-		(pin "8"
-			(uuid "aa38f334-2a2e-4612-9c32-50c0eb4a11d4")
-		)
-		(pin "9"
-			(uuid "83c6c2e5-b113-41b6-95a9-ff317f8e0dcd")
-		)
-		(pin "10"
-			(uuid "04e10b6e-2c95-44ab-bcad-df8400b8f991")
-		)
-		(pin "46"
-			(uuid "3cc65c5d-5afa-4c66-b744-1f9016bf0d69")
-		)
-		(pin "2"
-			(uuid "5b8fb124-226c-4647-b617-1c7e2f18219e")
-		)
-		(pin "1"
-			(uuid "89cc5544-c961-412c-af89-c9e5672d88d6")
-		)
-		(pin "39"
-			(uuid "805a96c6-82f0-4220-8560-6f99ec592219")
-		)
-		(pin "43"
-			(uuid "28b6e9de-025f-43f6-850e-d2093f2cdda7")
-		)
-		(pin "42"
-			(uuid "55d3bf61-9c22-4900-8834-40e40a1e7d5b")
-		)
-		(pin "48"
-			(uuid "cf8e1ed1-0098-4c7b-a904-fc44dc177aa4")
-		)
-		(pin "41"
-			(uuid "6458e8f8-c027-493e-82f9-12b2d952bb52")
-		)
-		(instances
-			(project "Keyboard-PCB"
-				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 43.18 129.54 270)
 		(unit 1)
@@ -10288,7 +10984,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7d5aab63-d63f-48ee-a877-1f43f6318918")
-		(property "Reference" "R9"
+		(property "Reference" "R5"
 			(at 41.91 127.508 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10352,228 +11048,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MCU_ST_STM32F1:STM32F103C6Tx")
-		(at 223.52 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f684228-0f97-4f18-8e7f-a23a5d472841")
-		(property "Reference" "U3"
-			(at 228.2033 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32F103C6Tx"
-			(at 228.2033 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at 208.28 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c6.pdf"
-			(at 223.52 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 32KB flash, 10KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
-			(at 223.52 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "37"
-			(uuid "12af84ba-f235-438a-867d-4b3b7e79a769")
-		)
-		(pin "36"
-			(uuid "4b5d1e07-a58d-416f-a88d-7cabd44bca79")
-		)
-		(pin "45"
-			(uuid "3db62c31-2ef2-40c0-99d1-e2d459bbc490")
-		)
-		(pin "47"
-			(uuid "56cc8b05-15fb-4a62-9689-349b17cba706")
-		)
-		(pin "38"
-			(uuid "3505c329-f420-436b-8bec-fc8c6014096a")
-		)
-		(pin "44"
-			(uuid "81c99d8d-b72a-4880-a1bf-e98f4454595c")
-		)
-		(pin "3"
-			(uuid "9330b081-91d0-46fc-902c-ffd079b9b245")
-		)
-		(pin "32"
-			(uuid "a56cd214-7727-490f-bd55-ae78f3e3cec6")
-		)
-		(pin "4"
-			(uuid "d2fc4cd4-3c52-4116-bb5b-962f8cd690b1")
-		)
-		(pin "5"
-			(uuid "5dc026c6-fe31-403f-899e-c5be84a19c45")
-		)
-		(pin "31"
-			(uuid "870b90c3-dede-4eb8-9317-9955fd76b1a9")
-		)
-		(pin "30"
-			(uuid "03c4b53e-4bbe-4113-a6ce-4c529024b5be")
-		)
-		(pin "29"
-			(uuid "9e5209ec-d740-469f-985f-cdf80bc6c03b")
-		)
-		(pin "28"
-			(uuid "6d619e17-642a-4f77-9004-fe80b7ea7833")
-		)
-		(pin "27"
-			(uuid "cd030385-2235-4409-a4b8-8c87976caa0b")
-		)
-		(pin "26"
-			(uuid "f3bf1614-63bc-4159-85e6-97b0793c0ed0")
-		)
-		(pin "25"
-			(uuid "b62fe8d0-f230-4d37-8c65-dcbcdc9c5cf0")
-		)
-		(pin "24"
-			(uuid "29591a01-3cdd-46e7-a409-2e47a1729e0f")
-		)
-		(pin "23"
-			(uuid "cfe46c46-a56e-465c-bb5f-8983efb231c6")
-		)
-		(pin "22"
-			(uuid "6d8faaf2-f926-4b71-b6b8-f63edf95dbcd")
-		)
-		(pin "33"
-			(uuid "449b8038-b390-4f4e-b7df-456218bb93f9")
-		)
-		(pin "17"
-			(uuid "380e7fc7-7f3a-4a43-9cb0-bd98d4bf7c80")
-		)
-		(pin "21"
-			(uuid "e76c2c19-b968-4885-baa4-16080fb95b43")
-		)
-		(pin "20"
-			(uuid "c870e60a-336c-49a3-8097-a7ac332ebf7f")
-		)
-		(pin "19"
-			(uuid "e16dfc22-2dfd-4dc7-a1fb-2f2019c34b80")
-		)
-		(pin "18"
-			(uuid "c2b20644-9fd1-43fd-9f95-ecf61080f5df")
-		)
-		(pin "34"
-			(uuid "f3e55836-5349-4a96-87b5-763905484d17")
-		)
-		(pin "35"
-			(uuid "5059c9c1-5c46-4305-b7f8-63c928edec7d")
-		)
-		(pin "40"
-			(uuid "03eef56c-0889-4049-a1ab-7deb76ea0be1")
-		)
-		(pin "11"
-			(uuid "2f2c3698-99de-426d-8eeb-cbc3fc71d465")
-		)
-		(pin "12"
-			(uuid "a51d1c16-b83b-4e96-bd63-74d83dee1d39")
-		)
-		(pin "13"
-			(uuid "6da67ab9-c932-41ee-b014-60928c2d159d")
-		)
-		(pin "14"
-			(uuid "b94b746f-5748-4eb1-ae8b-27dfcbdc562c")
-		)
-		(pin "15"
-			(uuid "dd2f9646-08f4-49a3-ad43-6559e03a468f")
-		)
-		(pin "16"
-			(uuid "69ca698b-b6cd-434a-9580-6a2043541c2a")
-		)
-		(pin "6"
-			(uuid "2f6ee4f9-3a0a-4ed7-b9ad-4422512af213")
-		)
-		(pin "7"
-			(uuid "e57434cd-5d8c-46d0-9922-991cc9a1d36b")
-		)
-		(pin "8"
-			(uuid "f5932585-0146-4a31-8395-3a5b68da03a8")
-		)
-		(pin "9"
-			(uuid "a10f3ad6-f5d2-400c-a781-b38fd5f77fb7")
-		)
-		(pin "10"
-			(uuid "f0f74c56-474d-424a-ba3e-bb0f8476d406")
-		)
-		(pin "46"
-			(uuid "b31bbe42-de68-46dc-904f-d3d8c08d4290")
-		)
-		(pin "2"
-			(uuid "7d95b05d-1741-4e95-86b9-ba9a646318ce")
-		)
-		(pin "1"
-			(uuid "3faf5c43-99f6-4d15-9b85-da1e557b5771")
-		)
-		(pin "39"
-			(uuid "6a06f41b-a2cb-460c-8e85-14036fd08a4a")
-		)
-		(pin "43"
-			(uuid "4c886d2d-0b95-4a87-b71b-de592772f52d")
-		)
-		(pin "42"
-			(uuid "a04385c0-9f97-4020-9533-172c3c440f5d")
-		)
-		(pin "48"
-			(uuid "d008fdef-5b9b-477b-b112-09b80373b57d")
-		)
-		(pin "41"
-			(uuid "318606ca-56fd-4513-9934-a630ed80a54e")
-		)
-		(instances
-			(project "Keyboard-PCB"
-				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "U3")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -10993,7 +11468,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "935e4984-2477-43a7-9da9-50ec7a824f05")
-		(property "Reference" "SW45"
+		(property "Reference" "SW44"
 			(at 34.29 100.838 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11055,7 +11530,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "SW45")
+					(reference "SW44")
 					(unit 1)
 				)
 			)
@@ -11150,7 +11625,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9549826f-f36e-40e5-84cc-19a6ebb1fe91")
-		(property "Reference" "C6"
+		(property "Reference" "C2"
 			(at 186.69 53.086 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11214,7 +11689,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "C6")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -11309,7 +11784,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a4cce47-2bcd-40ee-9660-c00dae5af3df")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 22.606 144.526 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11374,7 +11849,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -11469,7 +11944,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a0b5e1f0-0a1f-4689-b552-8a3dc03163a9")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 171.196 89.916 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11534,7 +12009,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -11551,7 +12026,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a4318097-35ad-41f4-bf69-b5002a528925")
-		(property "Reference" "R6"
+		(property "Reference" "R10"
 			(at 44.45 147.066 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11613,7 +12088,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "R6")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -11630,7 +12105,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0fe63e6-b50f-4aaf-af93-af3f413bd471")
-		(property "Reference" "J6"
+		(property "Reference" "J5"
 			(at 172.466 111.506 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11695,7 +12170,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J6")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -11946,6 +12421,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 130.81 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b80f032e-7f61-4f96-b954-60b4229bb500")
+		(property "Reference" "H3"
+			(at 133.35 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 133.35 92.7099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 130.81 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 99.06 95.25 0)
 		(unit 1)
@@ -11956,7 +12507,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bfb4d357-40be-42dc-adf4-672fc90445d6")
-		(property "Reference" "C13"
+		(property "Reference" "C18"
 			(at 96.52 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12020,7 +12571,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "C13")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -12116,7 +12667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c370b38b-b435-44e2-8c71-74e9ca327795")
-		(property "Reference" "J9"
+		(property "Reference" "J7"
 			(at 243.205 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12184,7 +12735,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J9")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -12345,6 +12896,82 @@
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 130.81 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9679bff-1b04-4d6e-be51-cd5bfebbe3ef")
+		(property "Reference" "H4"
+			(at 133.35 95.2499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 133.35 97.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 130.81 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyboard-PCB"
+				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -12597,7 +13224,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e514a331-61a5-4c10-b6ba-588b7af210c3")
-		(property "Reference" "C18"
+		(property "Reference" "C13"
 			(at 183.642 75.692 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12608,7 +13235,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 183.388 82.042 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12661,7 +13288,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "C18")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -12917,7 +13544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebe51aee-7690-45fa-9186-9d246c899a73")
-		(property "Reference" "J8"
+		(property "Reference" "J6"
 			(at 99.695 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12985,7 +13612,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J8")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -13236,7 +13863,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f67cda49-97fe-4b87-9671-3304206de95d")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 22.606 122.936 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13301,7 +13928,7 @@
 		(instances
 			(project "Keyboard-PCB"
 				(path "/1b664575-00b4-40b4-bde2-511c4bcaa699"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
