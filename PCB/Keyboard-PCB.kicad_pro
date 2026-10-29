@@ -550,7 +550,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Keyboard-PCB-Minimal.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
